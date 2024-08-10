@@ -20,26 +20,13 @@ public class Main {
             command = scanner.nextLine();
 
             switch (command) {
-                case "1":
-                    System.out.println(pet.eat());
-                    break;
-                case "2":
-                    System.out.println(pet.play());
-                    break;
-                case "3":
-                    System.out.println(pet.sleep());
-                    break;
-                case "4":
-                    System.out.println(pet.shower());
-                    break;
-                case "5":
-                    System.out.println(pet.verifyStatus());
-                    break;
-                case "6":
-                    System.out.println("Saindo do jogo. Até a próxima!");
-                    break;
-                default:
-                    System.out.println("Comando inválido. Tente novamente.");
+                case "1" -> System.out.println(pet.eat());
+                case "2" -> System.out.println(pet.play());
+                case "3" -> System.out.println(pet.sleep());
+                case "4" -> System.out.println(pet.shower());
+                case "5" -> System.out.println(pet.verifyStatus());
+                case "6" -> System.out.println("Saindo do jogo. Até a próxima!");
+                default -> System.out.println("Comando inválido. Tente novamente.");
             }
         } while (!command.equals("6"));
 
