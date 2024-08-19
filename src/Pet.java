@@ -7,13 +7,13 @@ public class Pet {
 
     public String eat() {
         hungry -= 25;
-        life += 10; // Comer aumenta a vida
+        life += 10;
         if (hungry < 0) {
             hungry = 0;
             return "Seu sushi já está satisfeito";
         }
         if (life > 100) {
-            life = 100; // Limitar vida a 100
+            life = 100; 
         }
         return "Seu sushi está comendo... nhami nhami... e agora está com " + hungry + "% de fome";
     }
@@ -25,12 +25,12 @@ public class Pet {
 
         if (sleep > 100) {
             sleep = 100;
-            life -= 10; // Brincar cansado diminui a vida
+            life -= 10; 
             return "Seu sushi está cansado demais para brincar";
         }
         if (dirty > 100) {
             dirty = 100;
-            life -= 10; // Brincar sujo diminui a vida
+            life -= 10; 
             return "Seu sushi está imundo, você precisa lavá-lo agora";
         }
         if (happiness > 100) {
@@ -38,7 +38,7 @@ public class Pet {
             return "Seu sushi já está no máximo de felicidade possível";
         }
         if (life < 0) {
-            life = 0; // Evitar que a vida vá abaixo de 0
+            life = 0; 
         }
         return "Seu sushi está brincando e agora está com " + happiness + "% de felicidade";
     }
@@ -47,27 +47,27 @@ public class Pet {
         sleep -= 25;
         happiness += 10;
         dirty -= 10;
-        life += 15; // Dormir aumenta a vida
+        life += 15; 
 
         if (sleep < 0) {
             sleep = 0;
             return "Seu sushi já está descansado";
         }
         if (life > 100) {
-            life = 100; // Limitar vida a 100
+            life = 100; 
         }
         return "Seu sushi está dormindo e agora está com " + sleep + "% de sono";
     }
 
     public String shower() {
         dirty -= 75;
-        life += 5; // Tomar banho aumenta a vida
+        life += 5; 
 
         if (dirty < 0) {
             dirty = 0;
         }
         if (life > 100) {
-            life = 100; // Limitar vida a 100
+            life = 100; 
         }
         return "Seu sushi tomou banho e agora está com " + dirty + "% de sujeira";
     }
